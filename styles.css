@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5abcc;
+}
+
+#responsiveImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.content-container {
+    text-align: center;
+    width: 100%;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#imageButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+#playPauseButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#playPauseButton img {
+    width: 50px;
+    height: auto;
+}
+
+#playPauseButton:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    #playPauseButton {
+        bottom: 40px;
+        left: 5px;
+    }
+
+    #playPauseButton img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #playPauseButton {
+        bottom: 40px;
+        left: 5px;
+    }
+
+    #playPauseButton img {
+        width: 35px;
+    }
+}
